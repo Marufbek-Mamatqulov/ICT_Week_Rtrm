@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { Program } from './components/Program';
+// Program removed as requested
 import { Projects } from './components/Projects';
 import { About } from './components/About';
 import { Footer } from './components/Footer';
@@ -33,7 +33,7 @@ function App() {
       <Navbar />
       <main>
         <Hero onCopyLink={handleCopyLink} />
-        <Program />
+  {/** Program section removed */}
         <SpecialSession />
         <Projects />
         <About />

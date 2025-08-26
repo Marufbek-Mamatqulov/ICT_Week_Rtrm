@@ -5,12 +5,12 @@ import { specialSession } from '../data/specialSession';
 export const SpecialSession = () => {
   const { lang, t } = useI18n();
   return (
-    <section id="special" className="relative py-24 md:py-32 bg-[#060b19]">
+    <section id="program" className="relative py-24 md:py-32 bg-[#060b19]">
       <div className="absolute inset-0 bg-gradient-to-b from-primary-600/10 via-transparent to-accent-600/10" aria-hidden="true" />
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10 mb-14">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">{t('special.title')}</h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">{t('program.title')}</h2>
             <p className="text-white/60 max-w-2xl text-sm md:text-base">{t('special.note')}</p>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 text-[11px] md:text-xs font-medium uppercase tracking-wider">
               <Meta label={t('special.meta.date')} value="24-September" />

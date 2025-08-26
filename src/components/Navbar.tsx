@@ -7,7 +7,6 @@ import { useI18n } from '../i18n';
 const sections = [
   { id: 'hero', labelKey: 'Home', fallback: 'Home' },
   { id: 'program', labelKey: 'program.title', fallback: 'Program' },
-  { id: 'special', labelKey: 'special.title', fallback: 'Special' },
   { id: 'projects', labelKey: 'projects.title', fallback: 'Projects' },
   { id: 'about', labelKey: 'about.title', fallback: 'About' },
   { id: 'footer', labelKey: 'footer.contact', fallback: 'Contact' },
