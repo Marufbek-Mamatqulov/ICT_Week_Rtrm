@@ -1,0 +1,1 @@
+Placeholder: replace rtmm-logo.png with the provided high-resolution white logo image. Rename your file to rtmm-logo.png in this directory.

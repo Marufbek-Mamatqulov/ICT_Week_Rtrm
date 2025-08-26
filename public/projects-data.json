@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "slug": "bir-million-dasturchi-loyihasi",
+    "title": "Bir million dasturchi loyihasi",
+    "description": "Yoshlarni zamonaviy dasturlash va IT ko'nikmalariga o'rgatish orqali raqamli iqtisodiyot uchun mutaxassislar tayyorlash tashabbusi.",
+    "image": "/bir-million-dasturchi-loyihasi.jpg",
+    "link": "https://edu.digital.uz/projects/bir-million-dasturchi-loyihasi"
+  },
+  {
+    "id": 2,
+    "slug": "al-xorazmiy",
+    "title": "Muhammad Al-Xorazmiy vorislari",
+    "description": "Maktab o'quvchilari o'rtasida algoritmik fikrlash va dasturlashni targ'ib qiluvchi ta'limiy loyiha.",
+    "image": "/al-xorazmiy.jpg",
+    "link": "https://edu.digital.uz/projects/al-xorazmiy"
+  },
+  {
+    "id": 3,
+    "slug": "it-village",
+    "title": "IT Shaharcha (IT Village)",
+    "description": "Hududlarda IT ekotizimini rivojlantirish va yoshlarni texnologiyaga qiziqtirish uchun yaratilgan innovatsion maydon.",
+    "image": "/it-village.jpg",
+    "link": "https://edu.digital.uz/projects/it-village"
+  },
+  {
+    "id": 4,
+    "slug": "it-sertifikatlar",
+    "title": "IT Iste'dod / Sertifikatlar",
+    "description": "Xalqaro IT sertifikatlarini olishni qo'llab-quvvatlash va malakani tasdiqlash dasturi.",
+    "image": "/it-sertifikatlar.jpg",
+    "link": "https://edu.digital.uz/projects/it-sertifikatlar"
+  },
+  {
+    "id": 5,
+    "slug": "it-talents-dasturi",
+    "title": "IT Talents dasturi",
+    "description": "Iqtidorli yoshlarni aniqlash va chuqurlashtirilgan IT yo'nalishlari bo'yicha tayyorlash tizimi.",
+    "image": "/it-talents-dasturi.jpg",
+    "link": "https://edu.digital.uz/projects/it-talents-dasturi"
+  },
+  {
+    "id": 6,
+    "slug": "olimpiads",
+    "title": "Olimpiadalar",
+    "description": "Respublika va xalqaro informatika olimpiadalariga tayyorlash hamda ishtirok etishni tashkil qilish.",
+    "image": "/olimpiads.png",
+    "link": "https://edu.digital.uz/projects/olimpiads"
+  },
+  {
+    "id": 7,
+    "slug": "school21",
+    "title": "School 21",
+    "description": "O'z-o'zini boshqarish va peer-to-peer tamoyiliga asoslangan zamonaviy dasturlash maktabi.",
+    "image": "/school21.png",
+    "link": "https://edu.digital.uz/projects/school21"
+  },
+  {
+    "id": 8,
+    "slug": "mirzo-ulugbek-vorislari",
+    "title": "Mirzo Ulug'bek vorislari",
+    "description": "STEM fanlariga qiziqishni oshirish va ilmiy izlanishlarni rag'batlantirish tashabbusi.",
+    "image": "/mirzo-ulugbek-vorislari.png",
+    "link": "https://edu.digital.uz/projects/mirzo-ulugbek-vorislari"
+  },
+  {
+    "id": 9,
+    "slug": "bilgi",
+    "title": "Bilgi.uz",
+    "description": "Onlayn ta'lim platformasi: raqamli ko'nikmalar va zamonaviy fanlar bo'yicha kurslar.",
+    "image": "/bilgi.png",
+    "link": "https://edu.digital.uz/projects/bilgi"
+  },
+  {
+    "id": 10,
+    "slug": "tot",
+    "title": "ToT – The Training of Trainers",
+    "description": "Murabbiylar va trenerlarni yangi pedagogik va texnik yondashuvlarga tayyorlash dasturi.",
+    "image": "/tot.png",
+    "link": "https://edu.digital.uz/projects/tot"
+  },
+  {
+    "id": 11,
+    "slug": "aca-navigator",
+    "title": "ACA Navigator",
+    "description": "O'quvchi va talabalar uchun ta'lim yo'nalishlari bo'yicha raqamli navigatsiya va maslahat vositasi.",
+    "image": "/aca-navigator.png",
+    "link": "https://edu.digital.uz/projects/aca-navigator"
+  },
+  {
+    "id": 12,
+    "slug": "raqamli-texnologiyalar-stipendiyasi",
+    "title": "Raqamli texnologiyalar vazirligi stipendiyasi",
+    "description": "Iqtidorli yoshlarni qo'llab-quvvatlovchi va ularning ITdagi rivojlanishini tezlashtiruvchi stipendiya dasturi.",
+    "image": "/stipendiy.png",
+    "link": "https://edu.digital.uz/projects/raqamli-texnologiyalar-stipendiyasi"
+  }
+]
