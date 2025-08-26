@@ -7,6 +7,7 @@ import { About } from './components/About';
 import { Footer } from './components/Footer';
 import { LoadingScreen } from './components/LoadingScreen';
 import { SpecialSession } from './components/SpecialSession';
+import { MobileNav } from './components/MobileNav';
 import { I18nProvider } from './i18n';
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
         <About />
       </main>
       <Footer />
+  {/* Mobile only enhancements (QR removed as requested) */}
+  <MobileNav />
     </I18nProvider>
   );
 }

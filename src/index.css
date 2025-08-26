@@ -6,6 +6,15 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dark body, .dark {
+  background-color: #060b19;
+  color: white;
+}
+
 /* Custom utility classes */
 .gradient-animate {
   background: linear-gradient(-45deg,#2d80ff,#7c3aed,#4ef3f7,#2d80ff);
@@ -34,3 +43,12 @@ html, body {
 
 /* Parallax containers */
 .parallax-layer { will-change: transform; }
+
+/* Mobile horizontal scroll snap for project cards (applied via utility classes) */
+.snap-x-mandatory { scroll-snap-type: x mandatory; }
+.snap-center { scroll-snap-align: center; }
+
+@media (max-width: 640px) {
+  .projects-horizontal::-webkit-scrollbar { display: none; }
+  .projects-horizontal { -ms-overflow-style: none; scrollbar-width: none; }
+}

@@ -20,8 +20,8 @@ const dictionaries: Record<Lang, Record<string, string>> = {
   'footer.link.contact': "Bog'lanish",
     'hero.title': 'Innovatsiya va Texnologiya Kelajagi',
     'hero.tagline': 'Ertani shakllantirayotgan yetakchilar, ijodkorlar va futuristlar bilan birga bo‘ling. Keshf qiling, tarmoq yarating va yechimlarni tezlashtiring.',
-    'hero.cta.program': 'Dastur',
-    'hero.cta.projects': 'Loyihalar',
+    'hero.cta.program': 'Forum Dasturi',
+    'hero.cta.projects': 'Raqamli ta\'lim loyihalari',
     'hero.qr.scan': 'Tadbir maʼlumotlari uchun skanerlang',
     'hero.qr.tooltip': 'Nusxalash',
     'hero.qr.desc': 'Rasmiy portal: ro‘yxatdan o‘tish, yangiliklar, xarita va networking vositalari. QR kodni oson almashtiring.',
@@ -52,6 +52,14 @@ const dictionaries: Record<Lang, Record<string, string>> = {
     'special.meta.participantsValue': '1000 nafargacha',
     'special.note': 'Taʼlimdagi raqamli transformatsiyani tezlashtirishga bag‘ishlangan maxsus blok.',
     'lang.toggle': 'EN'
+  , 'nav.home': 'Bosh sahifa'
+  , 'nav.program': 'Dastur'
+  , 'nav.projects': 'Loyihalar'
+  , 'nav.about': 'Haqimizda'
+  , 'nav.contact': 'Kontakt'
+  , 'action.register': 'Ro‘yxatdan o‘tish'
+  , 'theme.dark': 'Tungi'
+  , 'theme.light': 'Yorug‘'
   },
   en: {
     'brand.name': 'TECH FORUM',
@@ -96,6 +104,14 @@ const dictionaries: Record<Lang, Record<string, string>> = {
     'special.meta.participantsValue': 'Up to 1000',
     'special.note': 'A focused block accelerating digital transformation in education.',
     'lang.toggle': 'UZ'
+  , 'nav.home': 'Home'
+  , 'nav.program': 'Program'
+  , 'nav.projects': 'Projects'
+  , 'nav.about': 'About'
+  , 'nav.contact': 'Contact'
+  , 'action.register': 'Register'
+  , 'theme.dark': 'Dark'
+  , 'theme.light': 'Light'
   }
 };
 

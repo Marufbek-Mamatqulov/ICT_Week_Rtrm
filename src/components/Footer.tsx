@@ -12,7 +12,7 @@ export const Footer = () => {
             <div className="rounded-xl overflow-hidden ring-1 ring-white/10 shadow-lg shadow-black/30">
               <iframe
                 title="Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.3863134852704!2d69.28294807631004!3d41.33852527130506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b52cfa0d3c1%3A0x3ef0ed94871ce75!2sIT%20Park!5e0!3m2!1sen!2suz!4v1693072800000!5m2!1sen!2suz"
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2606.312162015294!2d69.33719311556806!3d41.341257381546896!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sus!4v1756215485388!5m2!1sru!2sus"
                 width="100%"
                 height="200"
                 loading="lazy"
@@ -34,16 +34,16 @@ export const Footer = () => {
           <div className="lg:col-span-2 space-y-5 order-3">
             <h4 className="text-sm font-semibold text-white/80">{t('footer.section.students')}</h4>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="#courses" className="hover:text-white">{t('footer.link.courses')}</a></li>
-              <li><a href="#centers" className="hover:text-white">{t('footer.link.centers')}</a></li>
-              <li><a href="#about" className="hover:text-white">{t('footer.link.about')}</a></li>
+              <li><a href="https://edu.digital.uz/education" className="hover:text-white">{t('footer.link.courses')}</a></li>
+              <li><a href="https://edu.digital.uz/study-centers" className="hover:text-white">{t('footer.link.centers')}</a></li>
+              <li><a href="https://edu.digital.uz/about" className="hover:text-white">{t('footer.link.about')}</a></li>
             </ul>
           </div>
           {/* Entrepreneurs */}
           <div className="lg:col-span-2 space-y-5 order-4">
             <h4 className="text-sm font-semibold text-white/80">{t('footer.section.entrepreneurs')}</h4>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><a href="#contact" className="hover:text-white">{t('footer.link.contact')}</a></li>
+              <li><a href="https://edu.digital.uz/contact" className="hover:text-white">{t('footer.link.contact')}</a></li>
             </ul>
             <div className="flex gap-4 pt-2">
               {socials.map(s => (
