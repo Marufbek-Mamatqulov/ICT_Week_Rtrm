@@ -19,7 +19,7 @@ const dictionaries: Record<Lang, Record<string, string>> = {
   'footer.link.about': 'Biz haqimizda',
   'footer.link.contact': "Bog'lanish",
   'hero.title': 'AI For IT Education',
-    'hero.tagline': 'Raqamli ta\'limdagi eng so\'nggi yangiliklar, innovatsiyalar va texnologiyalar bilan tanishing: Xorijiy va mahalliy ekspertlardan nutqlar, panel muhokamalari, konkurs-tanlovlar!.',
+    'hero.tagline': 'Raqamli ta\'limdagi eng so\'nggi yangiliklar, innovatsiyalar va texnologiyalar bilan tanishing: Xorijiy va mahalliy ekspertlardan nutqlar, panel muhokamalari, konkurs-tanlovlar!',
     'hero.cta.program': 'Forum Dasturi',
     'hero.cta.projects': 'Raqamli ta\'lim loyihalari',
     'hero.qr.scan': 'Tadbir maʼlumotlari uchun skanerlang',
@@ -60,6 +60,11 @@ const dictionaries: Record<Lang, Record<string, string>> = {
   , 'action.register': 'Ro‘yxatdan o‘tish'
   , 'theme.dark': 'Tungi'
   , 'theme.light': 'Yorug‘'
+  , 'countdown.days': 'Kun'
+  , 'countdown.hours': 'Soat'
+  , 'countdown.minutes': 'Daqiqa'
+  , 'countdown.seconds': 'Soniya'
+  , 'countdown.until': 'Tadbir boshlanishiga'
   },
   en: {
     'brand.name': 'TECH FORUM',
@@ -71,7 +76,7 @@ const dictionaries: Record<Lang, Record<string, string>> = {
   'footer.link.about': 'About Us',
   'footer.link.contact': 'Contact Us',
   'hero.title': 'AI For IT Education',
-    'hero.tagline': 'Get to know the latest news, innovations, and technologies in digital education: Speeches from foreign and local experts, panel discussions, and contests!.',
+    'hero.tagline': 'Get to know the latest news, innovations, and technologies in digital education: Speeches from foreign and local experts, panel discussions, and contests!',
     'hero.cta.program': 'Forum Program',
     'hero.cta.projects': 'Digital education projects',
     'hero.qr.scan': 'Scan for event info',
@@ -112,6 +117,11 @@ const dictionaries: Record<Lang, Record<string, string>> = {
   , 'action.register': 'Register'
   , 'theme.dark': 'Dark'
   , 'theme.light': 'Light'
+  , 'countdown.days': 'Days'
+  , 'countdown.hours': 'Hours'
+  , 'countdown.minutes': 'Minutes'
+  , 'countdown.seconds': 'Seconds'
+  , 'countdown.until': 'Until event start'
   }
 };
 

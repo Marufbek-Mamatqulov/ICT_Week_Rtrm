@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { useI18n } from '../i18n';
-import { LogoMark } from './LogoMark';
+import { Countdown } from './Countdown';
 
 interface HeroProps { onCopyLink: () => void; }
 
@@ -99,6 +99,9 @@ export const Hero = ({ onCopyLink }: HeroProps) => {
             <a href="#projects" className="inline-flex items-center px-8 py-4 font-semibold rounded-full bg-white/10 hover:bg-white/20 focus-visible:outline-none">
               {t('hero.cta.projects')}
             </a>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.65 }} className="pt-2">
+            <Countdown />
           </motion.div>
         </div>
       </div>
