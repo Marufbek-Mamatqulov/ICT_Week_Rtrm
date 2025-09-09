@@ -3,7 +3,7 @@ import { speakers } from '../data/speakers';
 import { useI18n } from '../i18n';
 
 export const Speakers = () => {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [featured, ...rest] = speakers;
 
   return (
@@ -21,13 +21,13 @@ export const Speakers = () => {
 
         {/* Featured speaker */}
         <div className="mb-12 flex justify-center">
-          <FeaturedCard name={featured.name} role={featured.role} time={featured.time} photo={featured.photo} />
+          <FeaturedCard name={featured.name[lang]} role={featured.role[lang]} time={featured.time} photo={featured.photo} />
         </div>
 
         {/* Grid of remaining speakers: 3 per row on md+ */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {rest.map((s) => (
-            <Card key={s.id} name={s.name} role={s.role} time={s.time} photo={s.photo} />
+            <Card key={s.id} name={s.name[lang]} role={s.role[lang]} time={s.time} photo={s.photo} />
           ))}
         </div>
       </div>
