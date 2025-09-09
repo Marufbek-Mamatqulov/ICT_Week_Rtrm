@@ -2,8 +2,7 @@ import { useCallback } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 // Program removed as requested
-import { Projects } from './components/Projects';
-import { About } from './components/About';
+// Removed Projects and About as requested
 import { Footer } from './components/Footer';
 import { LoadingScreen } from './components/LoadingScreen';
 import { SpecialSession } from './components/SpecialSession';
@@ -34,9 +33,7 @@ function App() {
       <main>
         <Hero onCopyLink={handleCopyLink} />
   {/** Program section removed */}
-        <SpecialSession />
-        <Projects />
-        <About />
+  <SpecialSession />
       </main>
       <Footer />
   {/* Mobile only enhancements (QR removed as requested) */}

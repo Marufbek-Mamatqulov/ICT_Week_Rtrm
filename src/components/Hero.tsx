@@ -96,9 +96,7 @@ export const Hero = ({ onCopyLink }: HeroProps) => {
               <span className="absolute inset-0 gradient-animate" />
               <span className="relative z-10">{t('hero.cta.program')}</span>
             </a>
-            <a href="#projects" className="inline-flex items-center px-8 py-4 font-semibold rounded-full bg-white/10 hover:bg-white/20 focus-visible:outline-none">
-              {t('hero.cta.projects')}
-            </a>
+            {/* Projects CTA removed */}
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.65 }} className="pt-2">
             <Countdown />

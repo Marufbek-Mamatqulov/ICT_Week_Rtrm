@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode, useCallback } from 'react';
 
-export type Lang = 'uz' | 'en';
+export type Lang = 'uz' | 'en' | 'ru';
 
 interface I18nContextValue {
   lang: Lang;
@@ -51,12 +51,11 @@ const dictionaries: Record<Lang, Record<string, string>> = {
     'special.meta.languagesValue': 'O‘zbek / Ingliz',
     'special.meta.participantsValue': '1000 nafargacha',
     'special.note': 'Taʼlimdagi raqamli transformatsiyani tezlashtirishga bag‘ishlangan maxsus blok.',
+    // Toggle shows the next language label in cycle: uz -> en -> ru -> uz
     'lang.toggle': 'EN'
   , 'nav.home': 'Bosh sahifa'
   , 'nav.program': 'Dastur'
-  , 'nav.projects': 'Loyihalar'
-  , 'nav.about': 'Haqimizda'
-  , 'nav.contact': 'Kontakt'
+  // removed: projects/about/contact
   , 'action.register': 'Ro‘yxatdan o‘tish'
   , 'theme.dark': 'Tungi'
   , 'theme.light': 'Yorug‘'
@@ -108,12 +107,11 @@ const dictionaries: Record<Lang, Record<string, string>> = {
     'special.meta.languagesValue': 'Uzbek / English',
     'special.meta.participantsValue': 'Up to 1000',
     'special.note': 'A focused block accelerating digital transformation in education.',
-    'lang.toggle': 'UZ'
+    // en -> ru
+    'lang.toggle': 'RU'
   , 'nav.home': 'Home'
   , 'nav.program': 'Program'
-  , 'nav.projects': 'Projects'
-  , 'nav.about': 'About'
-  , 'nav.contact': 'Contact'
+  // removed: projects/about/contact
   , 'action.register': 'Register'
   , 'theme.dark': 'Dark'
   , 'theme.light': 'Light'
@@ -122,6 +120,62 @@ const dictionaries: Record<Lang, Record<string, string>> = {
   , 'countdown.minutes': 'Minutes'
   , 'countdown.seconds': 'Seconds'
   , 'countdown.until': 'Until event start'
+  },
+  ru: {
+    'brand.name': 'TECH FORUM',
+    'org.name': 'Центр развития цифрового образования',
+    'footer.section.students': 'Для студентов',
+    'footer.section.entrepreneurs': 'Для предпринимателей',
+    'footer.link.courses': 'Курсы',
+    'footer.link.centers': 'IT центры',
+    'footer.link.about': 'О нас',
+    'footer.link.contact': 'Контакты',
+    'hero.title': 'ИИ для IT-образования',
+    'hero.tagline': 'Узнайте о новейших трендах и технологиях в цифровом образовании: выступления экспертов, панели и конкурсы!',
+    'hero.cta.program': 'Программа форума',
+    'hero.cta.projects': 'Проекты цифрового образования',
+    'hero.qr.scan': 'Сканируйте для информации о событии',
+    'hero.qr.tooltip': 'Копировать ссылку',
+    'hero.qr.desc': 'Официальный портал: регистрация, новости, карта площадки и networking.',
+    'program.title': 'Программа форума',
+    'program.subtitle': 'Кураторская повестка, объединяющая стратегическое видение и практические инновации.',
+    'projects.title': 'Проекты',
+    'projects.subtitle': 'Инициативы, ускоряющие цифровые экосистемы и интеллектуальные системы.',
+    'projects.helper': 'Наведите на карточку — интерактивная анимация.',
+    'about.title': 'О нас',
+    'about.p1': 'Мы объединяем технологов, исследователей, инвесторов и лидеров политики.',
+    'about.p2': 'Миссия: развивать экосистемы, где идеи быстро превращаются в реальный эффект.',
+    'about.p3': 'Через форумы, открытые лаборатории и витрины усиливаем прорывы в ИИ и кибербезопасности.',
+    'footer.about': 'Открытая платформа для совместного создания будущего.',
+    'footer.contact': 'Контакты',
+    'footer.quick': 'Ссылки',
+    'footer.join': 'Присоединяйтесь',
+    'footer.register': 'Регистрация',
+    'contact.phone': '+998 71 203 03 43',
+    'contact.email': 'education@digital.uz',
+    'contact.address': '100164, г. Ташкент, ул. И. Муминова, 4',
+    'special.title': 'Спецсессия: ИИ для IT-образования',
+    'special.meta.date': 'Дата',
+    'special.meta.time': 'Начало',
+    'special.meta.location': 'Локация',
+    'special.meta.language': 'Язык',
+    'special.meta.participants': 'Участники',
+    'special.meta.languagesValue': 'Узбекский / Английский / Русский',
+    'special.meta.participantsValue': 'До 1000',
+    'special.note': 'Фокус-блок о цифровой трансформации образования.',
+    // ru -> uz
+    'lang.toggle': 'UZ'
+  , 'nav.home': 'Главная'
+  , 'nav.program': 'Программа'
+  // removed: projects/about/contact
+  , 'action.register': 'Регистрация'
+  , 'theme.dark': 'Тёмная'
+  , 'theme.light': 'Светлая'
+  , 'countdown.days': 'Дней'
+  , 'countdown.hours': 'Часов'
+  , 'countdown.minutes': 'Минут'
+  , 'countdown.seconds': 'Секунд'
+  , 'countdown.until': 'До начала события'
   }
 };
 
@@ -130,7 +184,7 @@ const I18nContext = createContext<I18nContextValue | undefined>(undefined);
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
   const [lang, setLang] = useState<Lang>('uz');
   const t = useCallback((key: string) => dictionaries[lang][key] ?? key, [lang]);
-  const switchLang = useCallback(() => setLang(l => (l === 'uz' ? 'en' : 'uz')), []);
+  const switchLang = useCallback(() => setLang(l => (l === 'uz' ? 'en' : l === 'en' ? 'ru' : 'uz')), []);
   return <I18nContext.Provider value={{ lang, t, switchLang }}>{children}</I18nContext.Provider>;
 };
 

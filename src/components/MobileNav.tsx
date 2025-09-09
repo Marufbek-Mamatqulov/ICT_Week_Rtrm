@@ -7,9 +7,6 @@ import { useDarkMode } from '../hooks/useDarkMode';
 const links: { id: string; icon: string; labelKey: string }[] = [
   { id: 'hero', icon: '⌂', labelKey: 'nav.home' },
   { id: 'program', icon: '🗓', labelKey: 'nav.program' },
-  { id: 'projects', icon: '🚀', labelKey: 'nav.projects' },
-  { id: 'about', icon: 'ℹ️', labelKey: 'nav.about' },
-  { id: 'footer', icon: '✉️', labelKey: 'nav.contact' }
 ];
 
 export const MobileNav = () => {
