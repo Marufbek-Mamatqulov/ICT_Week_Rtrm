@@ -6,6 +6,7 @@ import { Hero } from './components/Hero';
 import { Footer } from './components/Footer';
 import { LoadingScreen } from './components/LoadingScreen';
 import { SpecialSession } from './components/SpecialSession';
+import { Speakers } from './components/Speakers';
 import { MobileNav } from './components/MobileNav';
 import { I18nProvider } from './i18n';
 
@@ -30,8 +31,9 @@ function App() {
     <I18nProvider>
       <LoadingScreen />
       <Navbar />
-      <main>
-        <Hero onCopyLink={handleCopyLink} />
+  <main>
+    <Hero onCopyLink={handleCopyLink} />
+    <Speakers />
   {/** Program section removed */}
   <SpecialSession />
       </main>

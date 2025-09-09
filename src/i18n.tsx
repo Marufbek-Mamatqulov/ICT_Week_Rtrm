@@ -55,6 +55,8 @@ const dictionaries: Record<Lang, Record<string, string>> = {
     'lang.toggle': 'EN'
   , 'nav.home': 'Bosh sahifa'
   , 'nav.program': 'Dastur'
+  , 'nav.speakers': 'Spikerlar'
+  , 'speakers.title': 'Spikerlar'
   // removed: projects/about/contact
   , 'action.register': 'Ro‘yxatdan o‘tish'
   , 'theme.dark': 'Tungi'
@@ -111,6 +113,8 @@ const dictionaries: Record<Lang, Record<string, string>> = {
     'lang.toggle': 'RU'
   , 'nav.home': 'Home'
   , 'nav.program': 'Program'
+  , 'nav.speakers': 'Speakers'
+  , 'speakers.title': 'Speakers'
   // removed: projects/about/contact
   , 'action.register': 'Register'
   , 'theme.dark': 'Dark'
@@ -167,6 +171,8 @@ const dictionaries: Record<Lang, Record<string, string>> = {
     'lang.toggle': 'UZ'
   , 'nav.home': 'Главная'
   , 'nav.program': 'Программа'
+  , 'nav.speakers': 'Спикеры'
+  , 'speakers.title': 'Спикеры'
   // removed: projects/about/contact
   , 'action.register': 'Регистрация'
   , 'theme.dark': 'Тёмная'

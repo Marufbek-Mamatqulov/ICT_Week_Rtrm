@@ -6,6 +6,7 @@ import { useDarkMode } from '../hooks/useDarkMode';
 
 const links: { id: string; icon: string; labelKey: string }[] = [
   { id: 'hero', icon: '⌂', labelKey: 'nav.home' },
+  { id: 'speakers', icon: '🎤', labelKey: 'nav.speakers' },
   { id: 'program', icon: '🗓', labelKey: 'nav.program' },
 ];
 
