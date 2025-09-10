@@ -8,10 +8,6 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center gap-6">
           <p className="text-[12px] text-white/50 leading-relaxed text-center max-w-xl">{t('footer.about')}</p>
-          <a href="#register" className="inline-flex items-center px-6 py-3 rounded-full font-medium relative overflow-hidden focus-visible:outline-none text-sm">
-            <span className="absolute inset-0 gradient-animate" />
-            <span className="relative z-10">{t('footer.register')}</span>
-          </a>
         </div>
         <div className="mt-12 pt-6 border-t border-white/10 text-center text-[11px] text-white/40">&copy; {new Date().getFullYear()} {t('org.name')} • {t('brand.name')}</div>
       </div>

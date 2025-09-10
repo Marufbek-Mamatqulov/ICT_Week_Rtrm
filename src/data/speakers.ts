@@ -3,23 +3,148 @@ export type Speaker = {
   id: string;
   name: LocaleText;
   role: LocaleText;
-  time: string; // e.g., "10:00 – 10:30"
   photo?: string; // optional image path under /public
 };
 
 export const speakers: Speaker[] = [
-  { id: 's1', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'AI tadqiqotchisi', en: 'AI Researcher', ru: 'Исследователь ИИ' }, time: '10:00 – 10:20', photo: undefined },
-  { id: 's2', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'Mashina o‘rganish muhandisi', en: 'Machine Learning Engineer', ru: 'Инженер машинного обучения' }, time: '10:20 – 10:35' },
-  { id: 's3', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'Ma’lumotlar olimi (AI)', en: 'Data Scientist (AI)', ru: 'Дата-саентист (ИИ)' }, time: '10:35 – 10:50' },
-  { id: 's4', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'AI mahsulot menejeri', en: 'AI Product Manager', ru: 'Продуктовый менеджер ИИ' }, time: '10:50 – 11:05' },
-  { id: 's5', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'AI axloqiyoti rahbari', en: 'AI Ethics Lead', ru: 'Руководитель по этике ИИ' }, time: '11:05 – 11:20' },
-  { id: 's6', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'Kompyuter ko‘rish muhandisi', en: 'Computer Vision Engineer', ru: 'Инженер компьютерного зрения' }, time: '11:20 – 11:35' },
-  { id: 's7', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'NLP muhandisi', en: 'NLP Engineer', ru: 'Инженер NLP' }, time: '11:35 – 11:50' },
-  { id: 's8', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'Generativ AI mutaxassisi', en: 'Generative AI Specialist', ru: 'Специалист по генеративному ИИ' }, time: '11:50 – 12:05' },
-  { id: 's9', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'AI yechimlar arxitektori', en: 'AI Solutions Architect', ru: 'Архитектор AI-решений' }, time: '12:05 – 12:20' },
-  { id: 's10', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'MLOps muhandisi', en: 'MLOps Engineer', ru: 'Инженер MLOps' }, time: '12:20 – 12:35' },
-  { id: 's11', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'AI o‘quv dasturi rahbari', en: 'AI Curriculum Lead', ru: 'Руководитель учебных программ по ИИ' }, time: '12:35 – 12:50' },
-  { id: 's12', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'AI xavfsizlik mutaxassisi', en: 'AI Security Specialist', ru: 'Специалист по безопасности ИИ' }, time: '12:50 – 13:05' },
-  { id: 's13', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'AI bulut arxitektori', en: 'AI Cloud Architect', ru: 'Архитектор облачных решений ИИ' }, time: '13:05 – 13:20' },
-  { id: 's14', name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' }, role: { uz: 'AI dastur menejeri', en: 'AI Program Manager', ru: 'Руководитель программ ИИ' }, time: '13:20 – 13:35' },
+  {
+    id: 's1',
+    name: { uz: 'Otabek Maxkamov', en: 'Otabek Maxkamov', ru: 'Отабек Махкамов' },
+    role: {
+      uz: 'Oliy taʼlim, fan va innovatsiyalar vaziri o‘rinbosari',
+      en: 'Deputy Minister of Higher Education, Science and Innovation of Uzbekistan',
+      ru: 'Заместитель министра высшего образования, науки и инноваций Узбекистана'
+    },
+    photo: '/Spikerlar/Otabek Maxkamov.png'
+  },
+  {
+    id: 's2',
+    name: { uz: 'Sardor Radjabov', en: 'Sardor Radjabov', ru: 'Сардор Раджабов' },
+    role: {
+      uz: "O‘zbekiston Respublikasi Maktabgacha va maktab taʼlimi vaziri o‘rinbosari",
+      en: 'Deputy Minister for Preschool and School Education of Uzbekistan',
+      ru: 'Заместитель министра дошкольного и школьного образования Узбекистана'
+    },
+    photo: '/Spikerlar/Radjabov Sardor Baxtiyorovich.png'
+  },
+  {
+    id: 's3',
+    name: { uz: 'Regina Maria Castillo', en: 'Regina Maria Castillo', ru: 'Регина Мария Кастильо' },
+    role: {
+      uz: 'UNICEF Oʻzbekistondagi vakili',
+      en: 'UNICEF Representative in Uzbekistan',
+      ru: 'Представитель ЮНИСЕФ в Узбекистане'
+    },
+    photo: '/Spikerlar/Ms. Regina Maria Castillo.png'
+  },
+  {
+    id: 's4',
+    name: { uz: 'Nikolaz Foucaud', en: 'Nikolaz Foucaud', ru: 'Николаз Фука' },
+    role: {
+      uz: 'Coursera EMEA & APAC boshqaruvchi direktori',
+      en: 'Managing Director Coursera EMEA & APAC',
+      ru: 'Управляющий директор Coursera EMEA & APAC'
+    },
+    photo: '/Spikerlar/Nikolaz Foucaud.png'
+  },
+  {
+    id: 's5',
+    name: { uz: 'Narek Aslikyan', en: 'Narek Aslikyan', ru: 'Нарек Асликян' },
+    role: {
+      uz: 'Armaniston Code Academy hamkuri',
+      en: 'Co‑founder at Armenian Code Academy',
+      ru: 'Соучредитель Armenian Code Academy'
+    },
+    photo: '/Spikerlar/Narek Aslikyan .png'
+  },
+  {
+    id: 's6',
+    name: { uz: 'Naora Zurutuza', en: 'Naora Zurutuza', ru: 'Наора Зурутуза' },
+    role: {
+      uz: 'Giga UNICEF bosh texnologiya direktori',
+      en: 'Chief Technology Officer of Giga UNICEF',
+      ru: 'Технический директор Giga UNICEF'
+    },
+    photo: '/Spikerlar/Naora Zurutuza.png'
+  },
+  {
+    id: 's7',
+    name: { uz: 'Boris Bobrovnikov', en: 'Boris Bobrovnikov', ru: 'Борис Бобровников' },
+    role: {
+      uz: '33 yillik tajribaga ega jahon IT eksperti',
+      en: 'Worldwide IT expert, 33 years experience',
+      ru: 'Мировой IT эксперт, 33 года опыта'
+    },
+    photo: '/Spikerlar/Boris Bobrovnikov.png'
+  },
+  {
+    id: 's8',
+    name: { uz: 'Xurshidbek Kurbanov', en: 'Khurshidbek Kurbanov', ru: 'Хуршидбек Курбанов' },
+    role: {
+      uz: 'Paybek kompaniyasi Engineering Lead',
+      en: 'Engineering Lead at Paybek',
+      ru: 'Engineering Lead в Paybek'
+    },
+    photo: '/Spikerlar/Xurshidbek Kurbanov.png'
+  },
+  {
+    id: 's9',
+    name: { uz: 'Maxmudjon Sodiqov', en: 'Makhmudjon Sodikov', ru: 'Махмуджон Содиков' },
+    role: {
+      uz: 'Professor, Central Asian University; Team Manager & Senior ML Engineer (Vention)',
+      en: 'Professor, Central Asian University; Team Manager & Senior ML Engineer (Vention)',
+      ru: 'Профессор, Central Asian University; Руководитель команды и Senior ML Engineer (Vention)'
+    },
+    photo: '/Spikerlar/Makhmudjon Sodikov.png'
+  },
+  {
+    id: 's10',
+    name: { uz: 'Saud Abdulwaheed', en: 'Saud Abdulwaheed', ru: 'Сауд Абдулвахид' },
+    role: {
+      uz: 'HSec asoschisi',
+      en: 'Founder of HSec',
+      ru: 'Основатель HSec'
+    },
+    photo: '/Spikerlar/Saud Abdulwaheed .png'
+  },
+  {
+    id: 's11',
+    name: { uz: 'Oybek Artikov', en: 'Oybek Artikov', ru: 'Ойбек Артиков' },
+    role: {
+      uz: "Muhammad al-Xorazmiy avlodlari dasturi mentori",
+      en: 'Mentor of "The Successors of Muhammad Al-Khwarizmi"',
+      ru: 'Наставник программы "Преемники Мухаммада аль-Хорезми"'
+    },
+    photo: '/Spikerlar/Oybek Artikov .png'
+  },
+  {
+    id: 's12',
+    name: { uz: 'Azizbek Xabibullaev', en: 'Azizbek Khabibullaev', ru: 'Азизбек Хабибуллаев' },
+    role: {
+      uz: 'Front-end dasturchi',
+      en: 'Front End Developer',
+      ru: 'Front End разработчик'
+    },
+    photo: '/Spikerlar/Azizbek Khabibullaev.png'
+  },
+  {
+    id: 's13',
+    name: { uz: 'Mariya Skorik', en: 'Maria Skorik', ru: 'Мария Скорик' },
+    role: {
+      uz: 'Uzum Academy',
+      en: 'Uzum Academy',
+      ru: 'Uzum Academy'
+    },
+    photo: '/Spikerlar/Maria Skorik.png'
+  },
+  {
+    id: 's14',
+    name: { uz: 'Aleksandra Nabieva', en: 'Alexandra Nabieva', ru: 'Александра Набиева' },
+    role: {
+      uz: 'Huawei "Seeds for the Future"',
+      en: 'Huawei "Seeds for the Future"',
+      ru: 'Huawei «Seeds for the Future»'
+    },
+    photo: '/Spikerlar/Alexandra Nabieva.png'
+  }
 ];

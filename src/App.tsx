@@ -1,11 +1,10 @@
 import { useCallback } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-// Program removed as requested
+import { Program } from './components/Program';
 // Removed Projects and About as requested
 import { Footer } from './components/Footer';
 import { LoadingScreen } from './components/LoadingScreen';
-import { SpecialSession } from './components/SpecialSession';
 import { Speakers } from './components/Speakers';
 import { MobileNav } from './components/MobileNav';
 import { I18nProvider } from './i18n';
@@ -32,10 +31,9 @@ function App() {
       <LoadingScreen />
       <Navbar />
   <main>
-    <Hero onCopyLink={handleCopyLink} />
-    <Speakers />
-  {/** Program section removed */}
-  <SpecialSession />
+  <Hero onCopyLink={handleCopyLink} />
+  <Speakers />
+  <Program />
       </main>
       <Footer />
   {/* Mobile only enhancements (QR removed as requested) */}
