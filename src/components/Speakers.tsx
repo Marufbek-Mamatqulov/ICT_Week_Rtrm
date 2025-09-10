@@ -31,13 +31,16 @@ export const Speakers = () => {
 
 function Avatar({ photo, name }: { photo?: string; name: string }) {
   const initials = name.split(' ').filter(Boolean).slice(0, 2).map(n => n[0]?.toUpperCase()).join('');
+  // Single per-page cache bust value so all speaker images share it (prevents infinite new requests on re-render)
+  const bust = (window as any).__IMG_BUST || ((window as any).__IMG_BUST = Date.now());
+  const withBust = photo ? `${photo}?v=${bust}` : undefined;
   return (
     <div className="relative mx-auto w-32 h-32 mb-6">
       <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent-500 to-primary-600 opacity-90" />
       <div className="relative w-full h-full rounded-full p-[4px] bg-[#061127]">
         <div className="w-full h-full rounded-full bg-[#0d1d33] border-2 border-neon/80 overflow-hidden flex items-center justify-center">
-          {photo ? (
-            <img src={photo} alt={name} className="w-full h-full object-cover" />
+          {withBust ? (
+            <img src={withBust} alt={name} className="w-full h-full object-cover" />
           ) : (
             <span className="text-white/80 text-2xl font-bold tracking-wide">{initials || 'AI'}</span>
           )}
