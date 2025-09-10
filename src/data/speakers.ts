@@ -15,7 +15,7 @@ export const speakers: Speaker[] = [
       en: 'Deputy Minister at the Ministry for the Development of ICT of the Republic of Uzbekistan',
       ru: 'Заместитель министра по развитию ИКТ Республики Узбекистан'
     },
-    // photo can be added later e.g. '/Spikerlar/Rustam Karimjonov.png'
+  photo: '/Spikerlar/Rustam Karimjonov.jpg'
   },
   {
     id: 's1',
