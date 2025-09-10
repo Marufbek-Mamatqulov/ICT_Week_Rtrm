@@ -8,6 +8,7 @@ import { LoadingScreen } from './components/LoadingScreen';
 import { Speakers } from './components/Speakers';
 import { MobileNav } from './components/MobileNav';
 import { I18nProvider } from './i18n';
+import { Partners } from './components/Partners';
 
 function App() {
   const handleCopyLink = useCallback(() => {
@@ -34,6 +35,7 @@ function App() {
   <Hero onCopyLink={handleCopyLink} />
   <Speakers />
   <Program />
+  <Partners />
       </main>
       <Footer />
   {/* Mobile only enhancements (QR removed as requested) */}
