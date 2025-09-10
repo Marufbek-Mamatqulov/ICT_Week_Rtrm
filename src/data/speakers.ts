@@ -19,13 +19,12 @@ export const speakers: Speaker[] = [
   },
   {
     id: 's1',
-    name: { uz: 'Otabek Maxkamov', en: 'Otabek Maxkamov', ru: 'Отабек Махкамов' },
+    name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' },
     role: {
       uz: 'Oliy taʼlim, fan va innovatsiyalar vaziri o‘rinbosari',
       en: 'Deputy Minister of Higher Education, Science and Innovation of Uzbekistan',
       ru: 'Заместитель министра высшего образования, науки и инноваций Узбекистана'
-    },
-    photo: '/Spikerlar/Otabek Maxkamov.png'
+    }
   },
   {
     id: 's2',
@@ -139,13 +138,12 @@ export const speakers: Speaker[] = [
   },
   {
     id: 's13',
-    name: { uz: 'Mariya Skorik', en: 'Maria Skorik', ru: 'Мария Скорик' },
+    name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' },
     role: {
       uz: 'Uzum Academy',
       en: 'Uzum Academy',
       ru: 'Uzum Academy'
-    },
-    photo: '/Spikerlar/Maria Skorik.png'
+    }
   },
   {
     id: 's14',
