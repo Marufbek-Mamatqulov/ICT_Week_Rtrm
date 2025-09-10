@@ -14,14 +14,21 @@ export const Speakers = () => {
         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-14 text-center">
           {t('speakers.title') || 'Speakers'}
         </h2>
+        {speakers.length > 0 && (
+          <div className="mb-14">
+            <div className="flex justify-center">
+              <SpeakerCard
+                name={speakers[0].name[lang]}
+                role={speakers[0].role[lang]}
+                photo={speakers[0].photo}
+                featured
+              />
+            </div>
+          </div>
+        )}
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-          {speakers.map(sp => (
-            <SpeakerCard
-              key={sp.id}
-              name={sp.name[lang]}
-              role={sp.role[lang]}
-              photo={sp.photo}
-            />
+          {speakers.slice(1).map(sp => (
+            <SpeakerCard key={sp.id} name={sp.name[lang]} role={sp.role[lang]} photo={sp.photo} />
           ))}
         </div>
       </div>
@@ -50,21 +57,21 @@ function Avatar({ photo, name }: { photo?: string; name: string }) {
   );
 }
 
-const SpeakerCard = ({ name, role, photo }: { name: string; role: string; photo?: string }) => (
+const SpeakerCard = ({ name, role, photo, featured }: { name: string; role: string; photo?: string; featured?: boolean }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     whileHover={{ y: -6 }}
     transition={{ duration: 0.4, ease: 'easeOut' }}
-    className="group relative flex flex-col items-center text-center rounded-[28px] px-6 pt-10 pb-8 bg-gradient-to-b from-[#0d1d33] to-[#0a1627] border border-white/10 shadow-[0_4px_18px_-4px_rgba(0,0,0,0.6)] hover:shadow-[0_8px_28px_-6px_rgba(0,0,0,0.65)] overflow-hidden"
+  className={`group relative flex flex-col items-center text-center rounded-[28px] px-6 pt-10 pb-8 bg-gradient-to-b from-[#0d1d33] to-[#0a1627] border border-white/10 shadow-[0_4px_18px_-4px_rgba(0,0,0,0.6)] hover:shadow-[0_8px_28px_-6px_rgba(0,0,0,0.65)] overflow-hidden ${featured ? 'md:w-[340px]' : ''}`}
   >
     <div className="absolute inset-0 rounded-[28px] bg-[radial-gradient(circle_at_50%_0%,rgba(78,243,247,0.12),transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity" />
     <Avatar photo={photo} name={name} />
-    <h3 className="relative z-10 font-extrabold text-lg md:text-xl leading-tight text-white mb-3 px-2">
+  <h3 className="relative z-10 font-extrabold text-lg md:text-xl leading-tight text-white mb-3 px-2">
       {name}
     </h3>
-    <p className="relative z-10 text-[13px] md:text-sm leading-relaxed text-white/75 whitespace-pre-line mb-4">
+  <p className="relative z-10 text-[13px] md:text-sm leading-relaxed text-white/75 whitespace-pre-line mb-4">
       {role}
     </p>
   {/* time removed as requested */}

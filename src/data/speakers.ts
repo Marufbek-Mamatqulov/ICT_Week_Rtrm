@@ -8,6 +8,16 @@ export type Speaker = {
 
 export const speakers: Speaker[] = [
   {
+    id: 's0',
+    name: { uz: 'Rustam Karimjonov', en: 'Rustam Karimjonov', ru: 'Рустам Каримжонов' },
+    role: {
+      uz: "O‘zbekiston Respublikasi Raqamli texnologiyalar vaziri o‘rinbosari",
+      en: 'Deputy Minister at the Ministry for the Development of ICT of the Republic of Uzbekistan',
+      ru: 'Заместитель министра по развитию ИКТ Республики Узбекистан'
+    },
+    // photo can be added later e.g. '/Spikerlar/Rustam Karimjonov.png'
+  },
+  {
     id: 's1',
     name: { uz: 'Otabek Maxkamov', en: 'Otabek Maxkamov', ru: 'Отабек Махкамов' },
     role: {
