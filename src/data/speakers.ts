@@ -140,9 +140,9 @@ export const speakers: Speaker[] = [
     id: 's13',
     name: { uz: 'Vera Dianova', en: 'Vera Dianova', ru: 'Vera Dianova' },
     role: {
-      uz: 'UUM Academy',
-      en: 'UUM Academy',
-      ru: 'UUM Academy'
+      uz: 'UZUM',
+      en: 'UZUM',
+      ru: 'UZUM'
     },
     photo: '/Spikerlar/Vera Dianova.png'
   },
