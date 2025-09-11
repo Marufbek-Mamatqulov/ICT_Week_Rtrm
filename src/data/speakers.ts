@@ -1,4 +1,12 @@
-export type LocaleText = { uz: string; en: string; ru: string };
+export type LocaleText = { u  {
+    id: 's2',
+    name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' },
+    role: {
+      uz: "O'zbekiston Respublikasi Maktabgacha va maktab taʼlimi vaziri o'rinbosari",
+      en: 'Deputy Minister for Preschool and School Education of Uzbekistan',
+      ru: 'Заместитель министра дошкольного и школьного образования Узбекистана'
+    }
+  }, en: string; ru: string };
 export type Speaker = {
   id: string;
   name: LocaleText;
@@ -138,12 +146,13 @@ export const speakers: Speaker[] = [
   },
   {
     id: 's13',
-    name: { uz: 'Ism Familiya', en: 'Name Surname', ru: 'Имя Фамилия' },
+    name: { uz: 'Vera Dianova', en: 'Vera Dianova', ru: 'Вера Дианова' },
     role: {
-      uz: 'Uzum Academy',
-      en: 'Uzum Academy',
-      ru: 'Uzum Academy'
-    }
+      uz: 'UUM Academy',
+      en: 'UUM Academy',
+      ru: 'UUM Academy'
+    },
+    photo: '/Spikerlar/Vera Dianova.png'
   },
   {
     id: 's14',
