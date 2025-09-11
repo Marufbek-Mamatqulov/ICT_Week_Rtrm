@@ -6,7 +6,9 @@ const logos: { src: string; alt: string }[] = [
   { src: '/Xamkorlar/ITEA logo_Eng.w.png', alt: 'ITEA' },
   { src: '/Xamkorlar/IT bilim.png', alt: 'IT Bilim' },
   { src: '/Xamkorlar/prof soyuz.png', alt: 'Prof Soyuz' },
-  { src: '/Xamkorlar/Texnoplov logo 1.0.png', alt: 'Texnoplov' }
+  { src: '/Xamkorlar/Texnoplov logo 1.0.png', alt: 'Texnoplov' },
+  { src: '/Xamkorlar/it park capital.png', alt: 'IT Park Capital' },
+  { src: '/Xamkorlar/yandex.png', alt: 'Yandex' }
 ];
 
 export const Partners = () => {

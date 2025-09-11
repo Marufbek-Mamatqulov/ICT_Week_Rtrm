@@ -27,7 +27,7 @@ export const Speakers = () => {
           </div>
         )}
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-          {speakers.slice(1).map(sp => (
+          {speakers.slice(1).map((sp: any) => (
             <SpeakerCard key={sp.id} name={sp.name[lang]} role={sp.role[lang]} photo={sp.photo} />
           ))}
         </div>
