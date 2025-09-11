@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 const logos: { src: string; alt: string }[] = [
   { src: '/Xamkorlar/Vazirlik logo. w.png', alt: 'Vazirlik' },
   { src: '/Xamkorlar/ITEA logo_Eng.w.png', alt: 'ITEA' },
-  { src: '/Xamkorlar/IT bilim.png', alt: 'IT Bilim' },
   { src: '/Xamkorlar/prof soyuz.png', alt: 'Prof Soyuz' },
   { src: '/Xamkorlar/Texnoplov logo 1.0.png', alt: 'Texnoplov' },
   { src: '/Xamkorlar/it park capital.png', alt: 'IT Park Capital' },
