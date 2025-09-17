@@ -29,7 +29,12 @@ export const Countdown = () => {
   }, []);
 
   return (
-    <div aria-label={t('countdown.until')} role="timer" className="flex gap-4 mt-4" data-expired={time.expired}>
+    <div
+      aria-label={t('countdown.until')}
+      role="timer"
+      className="flex flex-wrap gap-3 mt-4 justify-center items-center"
+      data-expired={time.expired}
+    >
       <TimeBox label={t('countdown.days')} value={time.days} />
       <Separator />
       <TimeBox label={t('countdown.hours')} value={time.hours} />
@@ -42,19 +47,20 @@ export const Countdown = () => {
 };
 
 const TimeBox = ({ label, value }: { label: string; value: number }) => (
-  <div className="flex flex-col items-center">
+  <div className="flex flex-col items-center flex-shrink-0">
     <div className="relative group">
-      <div className="w-16 h-20 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 flex items-center justify-center text-3xl font-bold tracking-tight shadow-[0_0_0_1px_rgba(255,255,255,0.05),0_0_20px_-4px_rgba(78,243,247,0.4)]">
+      <div className="w-12 h-16 md:w-16 md:h-20 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 flex items-center justify-center text-2xl md:text-3xl font-bold tracking-tight shadow-[0_0_0_1px_rgba(255,255,255,0.05),0_0_20px_-4px_rgba(78,243,247,0.4)]">
         {String(value).padStart(2, '0')}
       </div>
       <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-primary-600/20 via-accent-500/20 to-neon/30 mix-blend-overlay blur-sm" />
     </div>
-    <span className="mt-2 text-xs uppercase tracking-wide text-white/60">{label}</span>
+    <span className="mt-2 text-[10px] md:text-xs uppercase tracking-wide text-white/60">{label}</span>
   </div>
 );
 
 const Separator = () => (
-  <div className="flex items-center">
+  // hide separators on small screens to avoid awkward wrapping; show on md+
+  <div className="hidden md:flex items-center">
     <div className="w-1 h-1 rounded-full bg-white/30 mb-4" />
     <div className="w-1 h-1 rounded-full bg-white/30 mt-4" />
   </div>
